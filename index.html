@@ -1,35 +1,143 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پروژه دانشجویی من</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    p {
-      font-size: 1.2em;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Dumbiz?</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
-  <h1>سلام دنیا!</h1>
-  <p> به سایت دانشجویی من خوش آمدید ! این سایت با کمک گیتهاب پشتیبانی خواهد شد</p>
-  <footer>
-    <p>ساخته شده با ❤️ توسط یه داش با مرام</p>
-  </footer>
+    <!-- Dark Mode Toggle Button -->
+    <div class="dark-mode-toggle-container">
+        <button id="dark-mode-toggle" class="dark-mode-toggle">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    <!-- Side Menu -->
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#theories">Theories</a></li>
+            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Who is Dumbiz?</h1>
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="fade-in">
+            <h2>Introduction</h2>
+            <p>Dumbiz is a mysterious and enigmatic figure who has captured the curiosity of many. Some believe Dumbiz is a misunderstood genius, while others think they are just an eccentric character. This blog aims to explore the legend of Dumbiz and uncover the truth behind the mystery.</p>
+        </section>
+
+        <!-- Theories Section -->
+        <section id="theories" class="fade-in">
+            <h2>Theories About Dumbiz</h2>
+            <p>There are many theories about who Dumbiz really is. Here are a few of the most popular ones:</p>
+            <ul>
+                <li><strong>The Genius Theory:</strong> Dumbiz is a brilliant mind whose ideas are too advanced for most people to understand.</li>
+                <li><strong>The Prankster Theory:</strong> Dumbiz is a master troll, creating chaos and confusion just for fun.</li>
+                <li><strong>The Myth Theory:</strong> Dumbiz doesn't actually exist—they're just a fictional character created by the internet.</li>
+            </ul>
+        </section>
+
+        <!-- Famous Quotes Section -->
+        <section id="quotes" class="fade-in">
+            <h2>Famous Quotes</h2>
+            <p>Dumbiz is known for their cryptic and thought-provoking quotes. Here are a few:</p>
+            <div class="quote">
+                "The smarter you are, the dumber you seem."
+            </div>
+            <div class="quote">
+                "Reality is just a shared hallucination."
+            </div>
+            <div class="quote">
+                "If you think you understand, you probably don't."
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="fade-in">
+            <h2>Gallery: Traces of Dumbiz</h2>
+            <p>Here are some mysterious images that are said to be traces of Dumbiz. Hover over them to reveal more!</p>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="symbol_on_the_wall.jpg" alt="Mystery 1">
+                    <div class="overlay">
+                        <p>A cryptic symbol found in an abandoned building.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="scripts.jpg" alt="Mystery 2">
+                    <div class="overlay">
+                        <p>A handwritten note with Dumbiz's signature.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="shadowy_figure.jpg" alt="Mystery 3">
+                    <div class="overlay">
+                        <p>A blurry photo of a shadowy figure.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="symbol_on_the_wall_2.jpg" alt="Mystery 4">
+                    <div class="overlay">
+                        <p>A strange drawing on a wall.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sign-Up Form Section -->
+        <section id="signup" class="fade-in">
+            <h2>Subscribe to the DumbizLetter</h2>
+            <p>Want to stay updated on the latest theories, quotes, and mysteries about Dumbiz? Sign up for the DumbizLetter!</p>
+            <form class="signup-form">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section id="conclusion" class="fade-in">
+            <h2>Conclusion</h2>
+            <p>Who is Dumbiz? The truth may never be known. Whether a genius, a prankster, or a myth, Dumbiz has left an indelible mark on those who have encountered their legend. What do YOU think? Share your thoughts and theories!</p>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer fade-in">
+            &copy; 2025 Who is Dumbiz? Blog. All rights reserved.
+        </div>
+    </div>
+
+    <!-- JavaScript for Dark Mode Toggle and Mobile Menu -->
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+        const menuToggle = document.getElementById('menu-toggle');
+        const sideMenu = document.getElementById('side-menu');
+
+        // Toggle dark mode
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = '☀️ Light Mode';
+            } else {
+                darkModeToggle.textContent = '🌙 Dark Mode';
+            }
+        });
+
+        // Toggle mobile menu
+        menuToggle.addEventListener('click', () => {
+            sideMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
